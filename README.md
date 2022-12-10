@@ -1,5 +1,6 @@
 # ODSAG
 ODSAG (Open Data Semantic Annotation and Graph), a chrome extension that automatically annotates any open dataset and creates graphs (minimal and full graphs) from it. 
+This work has been accepted at the EGOV 2022 conference. Use the following link for more details: https://researchportal.unamur.be/en/publications/odsag-enhancing-open-data-discoverability-and-understanding-throu .
 
 ## How to install
 * Clone the repository
