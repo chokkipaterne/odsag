@@ -1,0 +1,15 @@
+{
+ "nodes":[
+{"id": "tx_descr_fr$#", "name": "tx_descr_fr (Q493522)", "x": 10, "y": 0, "type": "Subject Column", "hlink": "http://www.wikidata.org/entity/Q493522"},
+{"id": "tx_adm_dstr_descr_fr$#", "name": "tx_adm_dstr_descr_fr (Q91028)", "type": "CTA", "hlink": "http://www.wikidata.org/entity/Q91028"},
+{"id": "date$#", "name": "date", "type": "CTA", "hlink": "#"},
+{"id": "nis5$#", "name": "nis5", "type": "CTA", "hlink": "#"},
+{"id": "province$#", "name": "province (Q1549591)", "type": "CTA", "hlink": "http://www.wikidata.org/entity/Q1549591"},
+{"id": "region$#", "name": "region (Q83057)", "type": "CTA", "hlink": "http://www.wikidata.org/entity/Q83057"}
+],
+"links": [
+{"sourceId": "tx_descr_fr$#", "linkName": "located in the administrative territorial entity (P131)", "targetId": "tx_adm_dstr_descr_fr$#", "hlink": "http://www.wikidata.org/prop/direct/P131"},
+{"sourceId": "tx_descr_fr$#", "linkName": "NIS/INS code (P1567)", "targetId": "nis5$#", "hlink": "http://www.wikidata.org/prop/direct/P1567"},
+{"sourceId": "tx_descr_fr$#", "linkName": "located in the administrative territorial entity (P131)", "targetId": "province$#", "hlink": "http://www.wikidata.org/prop/direct/P131"}
+]
+}

@@ -11,7 +11,7 @@ ODSAG (Open Data Semantic Annotation and Graph), a chrome extension that automat
 	* Step 2: Select "Load Unpacked" (extension) and point it to the extension folder - and you are done!
 
 ## Interface
-![Screenshots of ODSAG using a COVID Dataset from the Namur portal.](/assets/odsag_process.png)
+![Screenshots of ODSAG using a COVID Dataset from the Namur portal.](/assets/odsag_process.PNG)
 Screenshots of ODSAG using a COVID Dataset from the Namur portal.
 
 ## Contact Us

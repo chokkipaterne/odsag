@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Open Data Semantic Annotation & Graph (ODSAG)</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup.css">
+    <link href="bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="loader"></div>
+    <h4>Open Data Semantic Annotation & Graph (ODSAG)</h4>
+    <form class="form-inline" id="form-semtab" action="http://localhost:8000/semtab">
+      <div class="form-group mb-2">
+        <input type="text" class="form-control" id="file_link" placeholder="Please enter the url of the CSV/JSON/XLS(X) file to access the open dataset"/>
+        <small style="font-size: 9.5px;"><i>Enter the url of the CSV/JSON/XLS(X) file to access the open dataset</i></small>
+      </div>
+      <button type="submit" class="btn btn-primary mb-2" id="btnSemtab">Generate</button>
+    </form>
+    <hr/><h4>Results</h4>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="sem-tab" data-bs-toggle="tab" data-bs-target="#sem" type="button" role="tab" aria-controls="sem" aria-selected="true">Semantic Annotation</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="mingraph-tab" data-bs-toggle="tab" data-bs-target="#mingraph" type="button" role="tab" aria-controls="mingraph" aria-selected="false">Minimal Graph</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="fullgraph-tab" data-bs-toggle="tab" data-bs-target="#fullgraph" type="button" role="tab" aria-controls="fullgraph" aria-selected="false">Full Graph</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="sem" role="tabpanel" aria-labelledby="sem-tab">
+        <div id="semtab_table"><p style="text-align: center;"><i>Please enter the url of the CSV/JSON/XLS(X) file to access the open dataset</i></p></div>
+      </div>
+      <div class="tab-pane fade" id="mingraph" role="tabpanel" aria-labelledby="mingraph-tab">
+        <div id="semtab_graph" class="hide"></div>
+      </div>
+      <div class="tab-pane fade" id="fullgraph" role="tabpanel" aria-labelledby="fullgraph-tab">
+        <div id="semtab_fullgraph" class="hide"></div>
+      </div>
+    </div>
+  </body>
+  <script src="d3@3.js" charset="utf-8"></script>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="popup.js"></script>
+</html>
